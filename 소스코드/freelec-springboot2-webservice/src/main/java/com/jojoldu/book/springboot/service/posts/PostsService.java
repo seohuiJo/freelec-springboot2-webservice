@@ -46,4 +46,11 @@ public class PostsService {
                 .map(PostsListResponseDto::new) // .map(posts->new PostsListResponseDto(post))
                 .collect(Collectors.toList());
     }
+
+    @Transactional
+    public void delete(Long id){
+        Posts posts=postsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
+
+        postsRepository.delete(posts); // 존재하는 Posts인지 확인을 위해 엔티티 조회 후 그대로 삭제함
+    }
 }
