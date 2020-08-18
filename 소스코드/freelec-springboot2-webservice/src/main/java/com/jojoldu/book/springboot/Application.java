@@ -13,5 +13,7 @@ public class Application {
     public static void main(String[] args){
         // 내장 WAS를 실행, 톰캣을 설치할 필요가 없음
         SpringApplication.run(Application.class, args);
+
+        // AWS 무료 계정 생성: cosmos7256@naver.com
     }
 }
