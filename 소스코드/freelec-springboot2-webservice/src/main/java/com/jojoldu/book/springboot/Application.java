@@ -15,5 +15,10 @@ public class Application {
         SpringApplication.run(Application.class, args);
 
         // AWS 무료 계정 생성: cosmos7256@naver.com
+        
+        // ec2 설정
+        // 1. Java8 설치
+        // 2. 타임존 변경
+        // 3. 호스트네임 변경
     }
 }
