@@ -20,5 +20,7 @@ public class Application {
         // 1. Java8 설치
         // 2. 타임존 변경
         // 3. 호스트네임 변경
+        
+        // MariaDB 다운
     }
 }
